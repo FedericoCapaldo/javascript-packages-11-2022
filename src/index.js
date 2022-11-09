@@ -1,3 +1,5 @@
+import { initSortable } from "./plugins/init_sortable"
+
 const list = document.querySelector("#results")
 
 const insertMovies = (data) => {
@@ -24,3 +26,6 @@ form.addEventListener("submit", (event) => {
   const input = document.querySelector("#search-input")
   fetchMovies(input.value)
 })
+
+
+initSortable()
