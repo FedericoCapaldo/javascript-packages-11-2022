@@ -6,6 +6,7 @@ export default class extends Controller {
   }
 
   disable() {
-    console.log("clicked!!")
+    this.element.innerText = "Bingo!"
+    this.element.setAttribute("disabled", "")
   }
 }
